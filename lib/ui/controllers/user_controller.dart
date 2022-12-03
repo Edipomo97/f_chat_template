@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_final_fields
+
 import 'dart:async';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:get/get.dart';
@@ -7,7 +9,7 @@ import 'authentication_controller.dart';
 
 // Controlador usado para manejar los usuarios del chat
 class UserController extends GetxController {
-  // lista en la que se almacenan los uaurios, la misma es observada por la UI
+  // lista en la que se almacenan los usurios, la misma es observada por la UI
   var _users = <AppUser>[].obs;
 
   final databaseRef = FirebaseDatabase.instance.ref();

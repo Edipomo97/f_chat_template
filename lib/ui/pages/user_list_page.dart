@@ -84,7 +84,7 @@ class _UserListPageState extends State<UserListPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(  
         appBar: AppBar(
           title: Text("Chat App ${authenticationController.userEmail()}"),
           actions: [

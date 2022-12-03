@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
 
     return GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Firebase demo',
+        title: 'Firebase Grupo 1',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.red,
         ),
         home: const FirebaseCentral());
   }

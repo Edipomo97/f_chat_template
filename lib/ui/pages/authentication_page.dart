@@ -15,6 +15,7 @@ class AuthenticationPage extends StatelessWidget {
     await authenticationController.signup('a@a.com', '123456');
     await authenticationController.signup('b@b.com', '123456');
     await authenticationController.signup('c@c.com', '123456');
+  
   }
 
   void login(String user) {
@@ -25,7 +26,11 @@ class AuthenticationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Chat App - Autenticación")),
+      appBar: AppBar(
+          title: const Text(
+        "Página de autenticación",
+        textAlign: TextAlign.center,
+      )),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -34,8 +39,9 @@ class AuthenticationPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
+                    // ignore: prefer_const_constructors
                     decoration: BoxDecoration(
-                        color: Colors.blue.shade100,
+                        color: const Color.fromARGB(255, 23, 80, 126),
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10))),
                     child: Column(children: [
@@ -53,7 +59,8 @@ class AuthenticationPage extends StatelessWidget {
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
-                              fontSize: 15),
+                              fontSize: 12,
+                              fontFamily: 'consolas'),
                         ),
                       )
                     ]),
@@ -64,8 +71,10 @@ class AuthenticationPage extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: Container(
                       width: double.infinity,
+                      // ignore: prefer_const_constructors
                       decoration: BoxDecoration(
-                          color: Colors.blue.shade100,
+                          // ignore: prefer_const_constructors
+                          color: Color.fromARGB(255, 23, 80, 126),
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10))),
                       child: Column(

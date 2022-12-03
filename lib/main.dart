@@ -20,7 +20,7 @@ Future<void> main() async {
     authDomain: Configuration.authDomain,
     databaseURL: Configuration.databaseURL,
     projectId: Configuration.projectId,
-    // storageBucket: Configuration.storageBucket,
+    storageBucket: Configuration.storageBucket,
     messagingSenderId: Configuration.messagingSenderId,
     appId: Configuration.appId,
     // measurementId: Configuration.measurementId),
